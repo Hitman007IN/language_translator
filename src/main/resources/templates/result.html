@@ -1,0 +1,12 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Universal Language Translator</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Result</h1>
+    <p th:text="'translated output: ' + ${sentence.trans}" />
+    <a href="/translate">Try Another one</a>
+</body>
+</html>

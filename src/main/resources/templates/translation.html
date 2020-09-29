@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Universal Language Translator</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Enter details below</h1>
+    <form action="#" th:action="@{/translate}" th:object="${userInput}" method="post">
+    	<p>Source Language: <input type="text" th:field="*{sourceLang}" /></p>
+    	<p>Target Language: <input type="text" th:field="*{targetLang}" /></p>
+        <p>Content: <input type="text" th:field="*{content}" /></p>
+        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+    </form>
+</body>
+</html>
